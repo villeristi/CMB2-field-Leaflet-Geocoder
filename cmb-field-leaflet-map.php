@@ -140,7 +140,7 @@ class CMB2_Field_Leaflet {
     protected function render_input( $field_name = '', CMB2_Field $field, $field_escaped_value, CMB2_Types $field_type_object ) {
         $attrs = $field_type_object->concat_attrs( [
             'id'    => "{$field->args( 'id' )}_{$field_name}",
-            'type'  => 'text',
+            'type'  => 'hidden',
             'name'  => "{$field->args( '_name' )}[{$field_name}]",
             'value' => isset( $field_escaped_value[ $field_name ] ) ? $field_escaped_value[ $field_name ] : '',
             'class' => "leaflet-map__{$field_name}",
