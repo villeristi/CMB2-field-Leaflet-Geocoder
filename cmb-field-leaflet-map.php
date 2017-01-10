@@ -2,8 +2,8 @@
 
 /*
 Plugin Name: CMB2 Field Type: Leaflet Maps
-Plugin URI: https://github.com/villeristi/cmb2-leaflet-field
-GitHub Plugin URI: https://github.com/villeristi/cmb2-leaflet-field
+Plugin URI: https://github.com/villeristi/cmb2-field-leaflet-geocoder
+GitHub Plugin URI: https://github.com/villeristi/cmb2-field-leaflet-geocoder
 Description: Leaflet (with Geocoder) field type for CMB2.
 Version: 0.1.0
 Author: Ville Ristimäki
