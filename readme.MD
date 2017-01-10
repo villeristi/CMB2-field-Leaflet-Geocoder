@@ -3,6 +3,10 @@ A Leaflet (with Geocoder) field type for [CMB2](https://github.com/WebDevStudios
 
 ## Installation
 
+#### Composer
+`composer require villeristi/cmb2-field-leaflet-geocoder`
+
+#### Manual
 1. [Download](https://github.com/villeristi/CMB2-field-Leaflet-Geocoder/archive/master.zip) the plugin
 2. Place the plugin folder in your `/wp-content/plugins/` directory
 3. Activate the plugin in the plugins dashboard
