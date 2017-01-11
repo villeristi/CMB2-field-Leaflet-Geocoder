@@ -1,8 +1,7 @@
 # CMB2 Field Leaflet Geocoder
 A Leaflet (with Geocoder) field type for [CMB2](https://github.com/WebDevStudios/CMB2).
 
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=flat-square)](https://github.com/villeristi/CMB2-field-Leaflet-Geocoder)
-
+[![Build Status](https://travis-ci.org/villeristi/CMB2-field-Leaflet-Geocoder.svg?branch=master)](https://travis-ci.org/villeristi/CMB2-field-Leaflet-Geocoder)
 
 ## Installation
 
