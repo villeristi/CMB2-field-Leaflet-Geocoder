@@ -101,8 +101,8 @@ class CMB2_Field_Leaflet {
      * Enqueue scripts and styles
      */
     public function enqueue_scripts() {
-        wp_enqueue_script( 'cmb2-leaflet-core', '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.js', [ 'jquery' ], self::VERSION );
-        wp_enqueue_style( 'cmb2-leaflet-core', '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.css', [], self::VERSION );
+        wp_enqueue_script( 'cmb2-leaflet-core', '//unpkg.com/leaflet@1.5.1/dist/leaflet.js', [ 'jquery' ], self::VERSION );
+        wp_enqueue_style( 'cmb2-leaflet-core', '//unpkg.com/leaflet@1.5.1/dist/leaflet.css', [], self::VERSION );
         wp_enqueue_script( 'cmb2-leaflet-geocoder', plugins_url( 'assets/js/geocoder.js', __FILE__ ), [ 'cmb2-leaflet-core' ], self::VERSION );
         wp_enqueue_script( 'cmb2-leaflet-main', plugins_url( 'assets/js/main.js', __FILE__ ), [ 'cmb2-leaflet-geocoder' ], self::VERSION );
         wp_enqueue_style( 'cmb2-leaflet-geocoder', plugins_url( 'assets/css/geocoder.css', __FILE__ ), [ 'cmb2-leaflet-core' ], self::VERSION );
@@ -140,7 +140,7 @@ class CMB2_Field_Leaflet {
     protected function render_input( $field_name = '', CMB2_Field $field, $field_escaped_value, CMB2_Types $field_type_object ) {
         $attrs = $field_type_object->concat_attrs( [
             'id'    => "{$field->args( 'id' )}_{$field_name}",
-            'type'  => 'hidden',
+            'type'  => 'text',
             'name'  => "{$field->args( '_name' )}[{$field_name}]",
             'value' => isset( $field_escaped_value[ $field_name ] ) ? $field_escaped_value[ $field_name ] : '',
             'class' => "leaflet-map__{$field_name}",
